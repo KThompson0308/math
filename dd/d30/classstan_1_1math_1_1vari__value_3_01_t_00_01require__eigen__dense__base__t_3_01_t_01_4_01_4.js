@@ -1,0 +1,27 @@
+var classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4 =
+[
+    [ "eigen_map", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a6a31ffa382cac7d27cea78ae153010cf", null ],
+    [ "eigen_scalar", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a6d39e5f95d10c12b95e8f575c1a0f5ed", null ],
+    [ "PlainObject", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a711e72b2ba4325533e436560b623c403", null ],
+    [ "value_type", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#ab59a3ace5ac25ec6ed7e36909c9374c6", null ],
+    [ "vari_type", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a2589fc5feabc5cf449e6600088e4d453", null ],
+    [ "vari_value", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#afac1c992b7351c41982a9fbe9c133177", null ],
+    [ "vari_value", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a8599788fcf04a7f4eb9708785dc0af10", null ],
+    [ "chain", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a75675c884308d30a32f3c05d06a60e7c", null ],
+    [ "cols", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#aaeb36ad7ff7da731ee514209431be508", null ],
+    [ "init_dependent", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#ad8ee97ea2b7419b35e0d098c5c0d229c", null ],
+    [ "operator delete", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#ae2e9b41bbe3f9624d333adaa61851c23", null ],
+    [ "operator new", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a712503b7e069a0fd70a65ac26abb87d6", null ],
+    [ "rows", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#aa3c11f46f58767113be302213bc52272", null ],
+    [ "set_zero_adjoint", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a4371e3c0467c0750a0a46d8422dfd616", null ],
+    [ "size", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a91c212666aa23142903be892018faba5", null ],
+    [ "vari_value", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#aafa01b9aaf99361129ea7be551ca0247", null ],
+    [ "operator<<", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a498b55a955cbb8406131f27608a238e1", null ],
+    [ "var_value", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#ac3b505861bed247e92a943fccb56c5e9", null ],
+    [ "adj_", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#af0d8d24f4e49b379ded307fd36901aab", null ],
+    [ "adj_mem_", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a79435f8d7d0bd9e1cad7b725db747eba", null ],
+    [ "ColsAtCompileTime", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#ad7d66b743b8dff29b0b0feff54064ed6", null ],
+    [ "RowsAtCompileTime", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a4ed7d52e1fcea55c370e0a9f05993a93", null ],
+    [ "val_", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a3d9d5d6e8535202ee163867a4ad8fa6b", null ],
+    [ "val_mem_", "dd/d30/classstan_1_1math_1_1vari__value_3_01_t_00_01require__eigen__dense__base__t_3_01_t_01_4_01_4.html#a820cd458b446d8eb151c5f959debbc73", null ]
+];
