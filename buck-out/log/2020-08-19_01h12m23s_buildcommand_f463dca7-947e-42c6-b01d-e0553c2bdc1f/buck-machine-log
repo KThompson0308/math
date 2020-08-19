@@ -1,0 +1,4 @@
+InvocationInfo {"buildId":"f463dca7-947e-42c6-b01d-e0553c2bdc1f","superConsoleEnabled":true,"isDaemon":true,"subCommand":"buildcommand","commandArgs":["build",":mathstan"],"unexpandedCommandArgs":["build",":mathstan"],"buckLogDir":"buck-out/log","isRemoteExecution":false,"repository":"","watchmanVersion":"20200816.222424.0","timestampMillis":1597799543895}
+BuildFinished {"timestampMillis":1597799544135}
+Cache.Stats {"cacheHitsPerMode":{"dir":0},"cacheErrorsPerMode":{"dir":0},"cacheBytesPerMode":{"dir":0},"totalCacheHits":0,"totalCacheErrors":0,"totalCacheMisses":0,"totalCacheIgnores":0,"totalCacheBytes":0,"totalCacheLocalKeyUnchangedHits":0,"successUploadCount":0,"failureUploadCount":0}
+ExitCode {"exitCode":10}

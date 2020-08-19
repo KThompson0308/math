@@ -1,0 +1,7 @@
+DOWNLOADED 0 ARTIFACTS, 0.00 BYTES, 0.0% CACHE MISS
+BUILDING: FINISHED IN 0.2s
+
+Top slow rules: Buck didn't spend time in rules.
+BUILD FAILED
+PARSING BUCK FILES: FINISHED IN 0.1s
+[31m//:mathstan references non-existing file or directory 'math.hpp'[0m

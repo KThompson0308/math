@@ -1,0 +1,4 @@
+InvocationInfo {"buildId":"cad841bb-d541-4b5a-bc16-80fc936769cc","superConsoleEnabled":true,"isDaemon":true,"subCommand":"buildcommand","commandArgs":["build",":mathstan"],"unexpandedCommandArgs":["build",":mathstan"],"buckLogDir":"buck-out/log","isRemoteExecution":false,"repository":"","watchmanVersion":"20200816.222424.0","timestampMillis":1597799294831}
+BuildFinished {"timestampMillis":1597799295171}
+Cache.Stats {"cacheHitsPerMode":{"dir":0},"cacheErrorsPerMode":{"dir":0},"cacheBytesPerMode":{"dir":0},"totalCacheHits":0,"totalCacheErrors":0,"totalCacheMisses":0,"totalCacheIgnores":0,"totalCacheBytes":0,"totalCacheLocalKeyUnchangedHits":0,"successUploadCount":0,"failureUploadCount":0}
+ExitCode {"exitCode":10}

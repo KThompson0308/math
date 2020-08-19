@@ -1,0 +1,20 @@
+PARSING BUCK FILES: FINISHED IN 2.0s
+CREATING ACTION GRAPH: FINISHED IN 0.2s
+[33m[31mg++: fatal error: no input files
+[0m[31mcompilation terminated.
+[0m[0m
+DOWNLOADED 0 ARTIFACTS, 0.00 BYTES, 100.0% CACHE MISS
+BUILDING: FINISHED IN 3.3s 2/2 JOBS, 2 UPDATED
+
+Top slow rules
+    //:mathstan: 0.2s
+BUILD FAILED
+[31mCommand failed with exit code 1.
+
+command: [/usr/bin/g++, @/home/kevin/Learning/math/buck-out/bin/mathstan#binary/linker.argsfile]
+
+stderr: [31mg++: fatal error: no input files
+[0m[31mcompilation terminated.
+[0m
+    When running <c++ link>.
+    When building rule //:mathstan#binary.[0m

@@ -1,0 +1,74 @@
+[2020-08-18 20:05:30.492][warn ][command:null][tid:01][com.facebook.buck.cli.SystemInfoLogger] Exception while trying to log file limits
+java.io.IOException: Cannot run program "ulimit": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at com.facebook.buck.cli.SystemInfoLogger.executeSystemCommand(SystemInfoLogger.java:102)
+	at com.facebook.buck.cli.SystemInfoLogger.logFileLimits(SystemInfoLogger.java:48)
+	at com.facebook.buck.cli.BuckDaemon.main(BuckDaemon.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.facebook.buck.cli.bootstrapper.ClassLoaderBootstrapper.main(ClassLoaderBootstrapper.java:55)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 9 more
+
+[2020-08-18 20:05:30.656][debug][command:null][tid:01][com.facebook.buck.cli.SystemInfoLogger] Parent process chain:
+   7700 buckd -Dbuck.is_buckd=true -Dbuck.buckd_launch_time_nanos=1368587880761 -Dfile.encoding=UTF-8 -XX:MaxGCPauseMillis=15000 -XX:SoftRefLRUPolicyMSPerMB=0 -XX:PerfDataSamplingInterval=5000 -Xrs -XX:+UnlockDiagnosticVMOptions -XX:GuaranteedSafepointInterval=5000 -Djava.io.tmpdir=/home/kevin/Learning/math/buck-out/tmp/buckd_tmp.pJcjcI -Dcom.facebook.nailgun.NGServer.outputPath=/home/kevin/Learning/math/buck-out/tmp/buckd_tmp.pJcjcI/ngserver-out -XX:+UseG1GC -XX:MaxHeapFreeRatio=40 -Xbootclasspath/a:/home/kevin/buck/ant-out/buckfilesystem/buckfilesystem.jar -Djava.nio.file.spi.DefaultFileSystemProvider=com.facebook.buck.core.filesystems.BuckFileSystemProvider -Xmx1000m -Djava.awt.headless=true -Djna.nosys=true -Djava.util.logging.config.class=com.facebook.buck.cli.bootstrapper.LogConfig -Dbuck.test_util_no_tests_dir=true -Dbuck.version_uid=a68ef0d834eec5fe381cb3e8e8612ba9fa42a09d -Dbuck.buckd_dir=/home/kevin/Learning/math/.buckd -Dorg.eclipse.jetty.util.log.class=org.eclipse.jetty.util.log.JavaUtilLog -Dbuck.git_commit=a68ef0d834eec5fe381cb3e8e8612ba9fa42a09d -Dbuck.git_commit_timestamp=1597678448 -Dbuck.binary_hash=932f64141c1ffd2b3db2a4c5d5742bac -Dbuck.base_buck_out_dir=buck-out -Dbuck.legacy_fix_script=/home/kevin/buck/programs/fixes/source_only_abi/autofix_source_only_abi_warnings.py -Dbuck.testrunner_classes=/home/kevin/buck/ant-out/testrunner/classes -Dbuck.logging_config_file=/home/kevin/buck/config/logging.properties.st -Dbuck.path_to_python_dsl=/home/kevin/buck/python-dsl -Dbuck.path_to_pathlib_py=/home/kevin/buck/third-party/py/pathlib/pathlib.py -Dbuck.path_to_pywatchman=/home/kevin/buck/third-party/py/pywatchman -Dbuck.path_to_typing=/home/kevin/buck/third-party/py/typing/python2 -Dbuck.path_to_six_py=/home/kevin/buck/third-party/py/six/six.py -Dbuck.path_to_sh_binary_template=/home/kevin/buck/src/com/facebook/buck/shell/sh_binary_template -Dbuck.path_to_isolated_trampoline=/home/kevin/buck/src/com/facebook/buck/rules/modern/builders/trampoline.sh -Dbuck.jacoco_agent_jar=/home/kevin/buck/third-party/java/jacoco/jacocoagent.jar -Dbuck.report_generator_jar=/home/kevin/buck/ant-out/report-generator.jar -Dbuck.dx=/home/kevin/buck/third-party/java/dx/etc/dx -Dbuck.android_agent_path=/home/kevin/buck/assets/android/agent.apk -Dbuck.buck_build_type_info=/home/kevin/buck/config/build_type/LOCAL_ANT/type.txt -Dbuck.native_exopackage_fake_path=/home/kevin/buck/assets/android/native-exopackage-fakes.apk -Dbuck.git_dirty=0 -Dpf4j.pluginsDir=/home/kevin/buck/ant-out/buck-modules -Dbuck.mode=repository -Dbuck.module.resources=/home/kevin/buck/ant-out/buck-modules-resources com.facebook.buck.cli.bootstrapper.ClassLoaderBootstrapper com.facebook.buck.cli.BuckDaemon local:.buckd/sock 180000
+   7686 /usr/bin/python2.7 /home/kevin/buck/bin/../programs/buck.py build :mathstan
+   7354 /bin/bash
+   6488 /usr/share/code/code --type=renderer --no-sandbox --disable-gpu-compositing --service-pipe-token=AE16E009346B6ACFEA1A7F8DAA2647AA --lang=en-US --app-path=/usr/share/code/resources/app --node-integration=true --webview-tag=true --no-sandbox --background-color=#1e1e1e --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=AE16E009346B6ACFEA1A7F8DAA2647AA --renderer-client-id=8 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+   5646 /usr/share/code/code --type=zygote --no-sandbox
+   5644 /usr/share/code/code --unity-launch
+   1863 /usr/bin/plasmashell
+      1 /sbin/init splash
+
+[2020-08-18 20:05:30.675][info ][command:null][tid:01][com.facebook.buck.cli.BuckDaemon] enabling background process killing for buckd
+[2020-08-18 20:05:30.679][info ][command:null][tid:01][com.facebook.buck.cli.BuckDaemon] enabled background process killing for buckd
+[2020-08-18 20:05:30.681][info ][command:null][tid:01][com.facebook.buck.cli.BuckDaemon] initialized bg session killer
+[2020-08-18 20:05:30.777][debug][command:null][tid:13][com.facebook.nailgun.NGSession] NGSession 1 is waiting for first client to connect
+[2020-08-18 20:05:30.783][debug][command:null][tid:13][com.facebook.nailgun.NGSession] NGSession 1 accepted new connection
+[2020-08-18 20:05:30.810][debug][command:null][tid:14][com.facebook.nailgun.NGCommunicator] Orchestrator thread started
+[2020-08-18 20:05:30.884][info ][command:null][tid:13][org.pf4j.DefaultPluginStatusProvider] Enabled plugins: []
+[2020-08-18 20:05:30.885][info ][command:null][tid:13][org.pf4j.DefaultPluginStatusProvider] Disabled plugins: []
+[2020-08-18 20:05:30.889][info ][command:null][tid:13][org.pf4j.DefaultPluginManager] PF4J version 2.0.0-SNAPSHOT in 'deployment' mode
+[2020-08-18 20:05:30.969][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.python@0.0.1' resolved
+[2020-08-18 20:05:30.969][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.lua@0.0.1' resolved
+[2020-08-18 20:05:30.970][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.go@0.0.1' resolved
+[2020-08-18 20:05:30.970][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.rust@0.0.1' resolved
+[2020-08-18 20:05:30.970][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.dotnet@0.0.1' resolved
+[2020-08-18 20:05:30.970][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.haskell@0.0.1' resolved
+[2020-08-18 20:05:30.971][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.ocaml@0.0.1' resolved
+[2020-08-18 20:05:30.971][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.halide@0.0.1' resolved
+[2020-08-18 20:05:30.971][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.js@0.0.1' resolved
+[2020-08-18 20:05:30.972][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.apple.project@0.0.1' resolved
+[2020-08-18 20:05:30.978][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.d@0.0.1' resolved
+[2020-08-18 20:05:30.978][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.gwt@0.0.1' resolved
+[2020-08-18 20:05:30.978][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.filebundler@0.0.1' resolved
+[2020-08-18 20:05:30.978][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.filegroup@0.0.1' resolved
+[2020-08-18 20:05:30.979][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.zip.rules@0.0.1' resolved
+[2020-08-18 20:05:30.979][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Plugin 'com.facebook.buck.features.project.intellij@0.0.1' resolved
+[2020-08-18 20:05:30.979][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.python@0.0.1'
+[2020-08-18 20:05:30.984][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.lua@0.0.1'
+[2020-08-18 20:05:30.986][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.go@0.0.1'
+[2020-08-18 20:05:30.991][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.rust@0.0.1'
+[2020-08-18 20:05:30.992][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.dotnet@0.0.1'
+[2020-08-18 20:05:30.994][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.haskell@0.0.1'
+[2020-08-18 20:05:30.997][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.ocaml@0.0.1'
+[2020-08-18 20:05:31.002][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.halide@0.0.1'
+[2020-08-18 20:05:31.003][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.js@0.0.1'
+[2020-08-18 20:05:31.004][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.apple.project@0.0.1'
+[2020-08-18 20:05:31.008][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.d@0.0.1'
+[2020-08-18 20:05:31.010][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.gwt@0.0.1'
+[2020-08-18 20:05:31.012][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.filebundler@0.0.1'
+[2020-08-18 20:05:31.013][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.filegroup@0.0.1'
+[2020-08-18 20:05:31.013][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.zip.rules@0.0.1'
+[2020-08-18 20:05:31.015][info ][command:null][tid:13][org.pf4j.AbstractPluginManager] Start plugin 'com.facebook.buck.features.project.intellij@0.0.1'
+[2020-08-18 20:05:31.198][debug][command:null][tid:13][com.facebook.buck.util.config.Configs] Loading configuration for /home/kevin/Learning/math
+[2020-08-18 20:05:31.215][debug][command:null][tid:13][com.facebook.buck.util.config.Configs] Loaded project configuration file /home/kevin/Learning/math/.buckconfig
+[2020-08-18 20:05:31.227][debug][command:null][tid:13][com.facebook.buck.util.config.Configs] Adding configuration overrides RawConfig{values={}}
+[2020-08-18 20:05:31.378][debug][command:null][tid:13][com.facebook.buck.cli.MainRunner] Rotating log.

@@ -1,0 +1,8 @@
+PARSING BUCK FILES: FINISHED IN 0.2s
+DOWNLOADED 0 ARTIFACTS, 0.00 BYTES, 0.0% CACHE MISS
+BUILDING: FINISHED IN 0.2s
+
+Top slow rules: Buck didn't spend time in rules.
+BUILD FAILED
+[31mBuck wasn't able to parse /home/kevin/Learning/math/BUCK:
+Incorrect arguments to prebuilt_cxx_library with name mathstan: Extra unknown kwargs: headers[0m
